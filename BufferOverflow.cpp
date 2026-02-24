@@ -42,7 +42,7 @@ void demoBufferOverflowData() {
 	printf("%s@vulnerable.machine.com: ", userName);
 	fflush(stdout);
 	//gets(passwd);  
-	scanf("%s", passwd); // use scanf("%s", passwd); if gets fails with identifier not found
+	scanf("%7s", passwd); // use scanf("%s", passwd); if gets fails with identifier not found
 
 	// Check user rights (set to NORMAL_USER and not changed in code)
 	if (userRights == NORMAL_USER) {
@@ -165,6 +165,7 @@ int main() {
 
 	return 0;
 }
+
 
 
 
